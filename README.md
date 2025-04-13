@@ -11,7 +11,7 @@
 
 [![npm version](https://img.shields.io/npm/v/react-devil-trigger.svg)](https://www.npmjs.com/package/react-devil-trigger)
 [![npm downloads](https://img.shields.io/npm/dm/react-devil-trigger.svg)](https://www.npmjs.com/package/react-devil-trigger)
-[![License](https://img.shields.io/npm/l/react-devil-trigger.svg)](https://github.com/tu-usuario/react-devil-trigger/blob/main/LICENSE)
+[![License](https://img.shields.io/npm/l/react-devil-trigger.svg)](https://github.com/Adan-Perez/react-devil-trigger/blob/main/LICENSE)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/react-devil-trigger)](https://bundlephobia.com/package/react-devil-trigger)
 
 A stylish collection of React components with dynamic features and special effects, inspired by the fast-paced action of Devil May Cry.
