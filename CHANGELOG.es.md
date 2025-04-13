@@ -1,5 +1,28 @@
 # Registro de cambios
 
+## 0.5.0 - 14/04/2025
+
+### Nuevas Funcionalidades
+- Componente `DevilProgressBar` mejorado con efectos visuales avanzados:
+  - Añadidos efectos de energía fluida para todos los estilos de variantes
+  - Implementados efectos de brillo dinámicos que se mueven con el progreso
+  - Añadidas animaciones de partículas y ondas de energía para la variante estilizada
+  - Añadidos efectos de pulso receptivos para la variante royal
+
+### Mejoras
+- Animaciones de barras de progreso completamente rediseñadas:
+  - Eliminados problemas visuales en las variantes stylized y royal
+  - Mejorada la continuidad visual durante las transiciones de progreso
+  - Mejorados los efectos específicos de cada tema (ej., efectos de fuego de Dante, estética de precisión de Vergil)
+  - Añadidas capas de profundidad para una apariencia más profesional
+
+### Mejoras Técnicas
+- Sistema de animación CSS refactorizado para un mejor rendimiento:
+  - Separado el seguimiento de progreso de los efectos visuales
+  - Utilizadas técnicas adecuadas de capas para animaciones superpuestas
+  - Implementadas animaciones aceleradas por hardware con propiedades transform
+  - Keyframes optimizados para transiciones más suaves
+
 ## 0.4.0 - 12/04/2025
 
 ### Nuevas Funcionalidades

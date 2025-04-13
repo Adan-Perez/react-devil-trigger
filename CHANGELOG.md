@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.5.0 - 2025-04-14
+
+### New Features
+- Enhanced `DevilProgressBar` component with advanced visual effects:
+  - Added fluid energy effects for all variant styles
+  - Implemented dynamic glow effects that move with progress
+  - Added particle and energy wave animations for stylized variant
+  - Added responsive pulse effects for royal variant
+
+### Enhancements
+- Completely redesigned progress bar animations:
+  - Eliminated visual glitches in stylized and royal variants
+  - Improved visual continuity during progress transitions
+  - Enhanced theme-specific effects (e.g., Dante's fire effects, Vergil's precision aesthetics)
+  - Added depth layers for more professional look and feel
+
+### Technical Improvements
+- Refactored CSS animation system for better performance:
+  - Separated progress tracking from visual effects
+  - Used proper layering techniques for overlaid animations
+  - Implemented hardware-accelerated animations with transform properties
+  - Optimized keyframes for smoother transitions
+
 ## 0.4.0 - 2025-04-12
 
 ### New Features

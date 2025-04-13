@@ -16,12 +16,11 @@
 
 A stylish collection of React components with dynamic features and special effects, inspired by the fast-paced action of Devil May Cry.
 
-## 🆕 What's New in v0.4.0
+## 🆕 What's New in v0.5.0
 
-- **Size Variants**: Choose from 4 different sizes (sm, md, lg, xl) to fit your design
-- **Center Positioning**: New position options for top-center and bottom-center
-- **Enhanced Contrast**: Improved contrast across all character themes for better accessibility
-- **Advanced Positioning**: Better handling of minimized state in all positions
+- **Enhanced Progress Bars**: Fluid animations and energy effects for all progress bar variants
+- **Improved Visual Effects**: Dynamic glow effects, particle animations, and depth layers
+- **Technical Improvements**: Better performance and smoother animations
 
 ## Installation
 
@@ -29,7 +28,11 @@ A stylish collection of React components with dynamic features and special effec
 npm install react-devil-trigger
 ```
 
-## Basic Usage Example
+## Components
+
+### AudioDevilTrigger
+
+Stylish audio player with Devil May Cry themes and effects.
 
 ```jsx
 import { AudioDevilTrigger } from 'react-devil-trigger';
@@ -39,12 +42,69 @@ function App() {
     <div>
       <AudioDevilTrigger
         audioSrc='path-to-audio.mp3'
-        triggerWord='jackpot'
+        triggerKey='jackpot' // Optional trigger word
         characterTheme='dante'
       />
     </div>
   );
 }
+```
+
+### DevilProgressBar
+
+Dynamic progress bars with Devil May Cry inspired effects and animations.
+
+```jsx
+import { DevilProgressBar } from 'react-devil-trigger';
+
+function App() {
+  const [progress, setProgress] = useState(50);
+
+  return (
+    <div>
+      <DevilProgressBar
+        progress={progress}
+        variant='stylized'
+        characterTheme='dante'
+        label='Devil Trigger'
+        showPercentage={true}
+      />
+    </div>
+  );
+}
+```
+
+## Progress Bar Variants
+
+Choose from various stylistic variants:
+
+```jsx
+// Default style
+<DevilProgressBar progress={75} />
+
+// Stylized with energy effects
+<DevilProgressBar progress={75} variant="stylized" />
+
+// Devil Trigger gauge
+<DevilProgressBar progress={75} variant="dt" />
+
+// Sin Devil Trigger gauge (more intense effects)
+<DevilProgressBar progress={75} variant="sdt" />
+
+// Royal Guard style
+<DevilProgressBar progress={75} variant="royal" />
+```
+
+## Progress Bar Sizes
+
+Choose from different size options:
+
+```jsx
+<DevilProgressBar progress={75} height="xs" />
+<DevilProgressBar progress={75} height="sm" />
+<DevilProgressBar progress={75} height="md" /> // Default
+<DevilProgressBar progress={75} height="lg" />
+<DevilProgressBar progress={75} height="xl" />
 ```
 
 ## Character Themes
@@ -57,14 +117,10 @@ Choose from various Devil May Cry character themes:
   characterTheme="dante"
 />
 
-<AudioDevilTrigger
-  audioSrc="bury-the-light.mp3"
+<DevilProgressBar
+  progress={75}
   characterTheme="vergil"
-/>
-
-<AudioDevilTrigger
-  audioSrc="devil-trigger.mp3"
-  characterTheme="nero"
+  variant="sdt"
 />
 ```
 
@@ -112,18 +168,19 @@ When customizing the background, there are two ways to set opacity:
 
 1. **Using `backgroundColor` with opacity included**:
 
-   ```jsx
-   <AudioDevilTrigger
-     backgroundColor='rgba(0, 0, 0, 0.7)'
-     // backgroundOpacity is ignored when using rgba/hsla format
-   />
-   ```
-
-2. **Using `backgroundColor` with `backgroundOpacity`**:
 ```jsx
 <AudioDevilTrigger
-     backgroundColor='#000000' // or any color name or hex code
-     backgroundOpacity={0.7} // This will be applied to the color
+  backgroundColor='rgba(0, 0, 0, 0.7)'
+  // backgroundOpacity is ignored when using rgba/hsla format
+/>
+```
+
+2. **Using `backgroundColor` with `backgroundOpacity`**:
+
+```jsx
+<AudioDevilTrigger
+  backgroundColor='#000000' // or any color name or hex code
+  backgroundOpacity={0.7} // This will be applied to the color
 />
 ```
 
@@ -157,8 +214,8 @@ Each theme comes with predefined colors, but you can override them:
 
 ## Developers
 
-| Author | GitHub | 
-|--------|--------|
+| Author     | GitHub                                      |
+| ---------- | ------------------------------------------- |
 | Adan-Perez | [Adan-Perez](https://github.com/Adan-Perez) |
 
 ## License
