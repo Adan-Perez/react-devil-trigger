@@ -9,17 +9,6 @@
   />
 </p>
 
-<style>
-  @keyframes glow {
-    from {
-      filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.7)) drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
-    }
-    to {
-      filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.9)) drop-shadow(0 0 20px rgba(255, 0, 0, 0.7));
-    }
-  }
-</style>
-
 [![npm version](https://img.shields.io/npm/v/react-devil-trigger.svg)](https://www.npmjs.com/package/react-devil-trigger)
 [![npm downloads](https://img.shields.io/npm/dm/react-devil-trigger.svg)](https://www.npmjs.com/package/react-devil-trigger)
 [![License](https://img.shields.io/npm/l/react-devil-trigger.svg)](https://github.com/tu-usuario/react-devil-trigger/blob/main/LICENSE)
