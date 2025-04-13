@@ -3,12 +3,9 @@
 <p align="center">
   <img 
     src="./images/logo-letters.webp" 
-    alt="React Devil Trigger Text Logo" 
+    alt="React Devil Trigger Logo" 
     width="400" 
-    style="
-      animation: glow 2s ease-in-out infinite alternate;
-      -webkit-animation: glow 2s ease-in-out infinite alternate;
-    " 
+    style="filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.8)) drop-shadow(0 0 20px rgba(255, 0, 0, 0.4));" 
   />
 </p>
 
