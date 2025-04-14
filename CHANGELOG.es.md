@@ -1,8 +1,23 @@
 # Registro de cambios
 
+## 0.5.1 - 14/04/2025
+
+### Correcciones
+
+- Solucionados problemas de importación CSS cuando se usa el módulo en otros proyectos
+- Resuelto el error "Can't resolve './base.css'" que ocurría con algunos bundlers
+- Asegurado el manejo adecuado de importaciones CSS en el proceso de construcción
+
+### Mejoras Técnicas
+
+- Mejorada la configuración de Rollup para procesar correctamente el CSS
+- Garantizada compatibilidad con varios bundlers (webpack, vite, parcel)
+- Mejorada la generación de recursos CSS con resolución de rutas apropiada
+
 ## 0.5.0 - 14/04/2025
 
 ### Nuevas Funcionalidades
+
 - Componente `DevilProgressBar` mejorado con efectos visuales avanzados:
   - Añadidos efectos de energía fluida para todos los estilos de variantes
   - Implementados efectos de brillo dinámicos que se mueven con el progreso
@@ -10,6 +25,7 @@
   - Añadidos efectos de pulso receptivos para la variante royal
 
 ### Mejoras
+
 - Animaciones de barras de progreso completamente rediseñadas:
   - Eliminados problemas visuales en las variantes stylized y royal
   - Mejorada la continuidad visual durante las transiciones de progreso
@@ -17,6 +33,7 @@
   - Añadidas capas de profundidad para una apariencia más profesional
 
 ### Mejoras Técnicas
+
 - Sistema de animación CSS refactorizado para un mejor rendimiento:
   - Separado el seguimiento de progreso de los efectos visuales
   - Utilizadas técnicas adecuadas de capas para animaciones superpuestas
@@ -26,6 +43,7 @@
 ## 0.4.0 - 12/04/2025
 
 ### Nuevas Funcionalidades
+
 - Añadidas variantes de tamaño para el reproductor:
   - Cuatro tamaños disponibles: sm, md, lg, xl
   - Escalado responsivo de todos los elementos, incluyendo controles y fuentes
@@ -35,11 +53,13 @@
   - Manejo especial para el estado minimizado centrado
 
 ### Mejoras
+
 - Mejorado el contraste en todos los temas de personajes para una mejor accesibilidad
 
 ## 0.3.0 - 11/04/2025
 
 ### Nuevas Funcionalidades
+
 - Añadidos temas de personajes de Devil May Cry con estilos visuales únicos:
   - Dante: Rojo con acentos dorados y efectos de fuego
   - Vergil: Azul con precisión y estética afilada
@@ -56,6 +76,7 @@
 - Añadido soporte de color de acento para elementos interactivos y animaciones
 
 ### Mejoras
+
 - Refactorización completa de la arquitectura CSS para mejor mantenibilidad:
   - Estructura modular con archivos separados para estilos base, layouts, controles y animaciones
   - Archivos de tema individuales para cada personaje de DMC
@@ -66,6 +87,7 @@
 - Mejor documentación para todas las opciones de personalización
 
 ### Mejoras Técnicas
+
 - División del código CSS para mejor mantenibilidad
 - Sistema de temas mejorado con variables CSS
 - Mejor validación y documentación de props
@@ -74,6 +96,7 @@
 ## 0.2.0 - 08/04/2025
 
 ### Mejoras
+
 - Cambiado el valor predeterminado de `triggerWord` a `null`, evitando activaciones accidentales durante la escritura normal
 - Mejorado el comportamiento del popup de control de volumen con cierre automático:
   - Se cierra al hacer clic fuera del popup
@@ -82,6 +105,7 @@
 - Limpieza adecuada de temporizadores y escuchadores de eventos para evitar fugas de memoria
 
 ### Correcciones
+
 - Eliminada la duplicación de la interfaz `AudioDevilTriggerProps` utilizando una única fuente de verdad en `types/index.ts`
 
 ## 0.1.0 - 07/04/2025

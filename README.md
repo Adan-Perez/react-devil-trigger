@@ -28,6 +28,13 @@ A stylish collection of React components with dynamic features and special effec
 npm install react-devil-trigger
 ```
 
+> [!IMPORTANT]
+> You need to import the CSS styles in your main file (e.g., `main.tsx` or `App.jsx`) to apply the default styles and animations.
+
+```javascript
+import 'react-devil-trigger/dist/devil-trigger.css'; // Import CSS styles in your main file
+```
+
 ## Components
 
 ### AudioDevilTrigger
